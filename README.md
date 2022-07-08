@@ -8,11 +8,11 @@
 
 ## การตั้งค่าใช้งาน
 
-1. หลังจากดาวน์โหลดไฟล์ .zip แล้วให้ทำการแตกไว้ไว้ตำแหน่งที่ต้องการ
+1. หลังจากดาวน์โหลดไฟล์ .zip แล้วให้ทำการแตกไฟล์ไว้ตำแหน่งที่ต้องการ หรือจะคัดลอกด้วยคำสั่ง
 
-`$ git clone https://github.com/zoom/sample-app-web.git`
+`$ git clone https://github.com/command09/weerachai-jonburom.git`
 
-2. เปิดไฟล์เพื่อทำการแก้ไขด้วย Text Editer.
+2. เปิดไฟล์เพื่อทำการแก้ไขด้วย Text Editer
 
 3. เปิดไฟล์ `sample-app-web/CDN/js/index.js` : เพื่อแก้ไขค่า "SDK_KEY" และ "SDK_SECRET"
 
