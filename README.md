@@ -1,30 +1,21 @@
-# Zoom Meeting SDK Sample App - Web
+# การติดตั้ง Zoom meeting บนเว็บไซต์
 
-Use of this sample app is subject to our [Terms of Use](https://zoom.us/docs/en-us/zoom_api_license_and_tou.html).
+สามรถศึกษาคู่มือได้จาก [Terms of Use](https://zoom.us/docs/en-us/zoom_api_license_and_tou.html).
 
-The [Zoom Meeting SDK](https://marketplace.zoom.us/docs/sdk/native-sdks/web) embeds the Zoom Meeting and Webinar experience in a website through a highly optimized WebAssembly module.
+การเรียกใช้งาน [Zoom Meeting SDK] โดยเข้าไปที่ (https://marketplace.zoom.us/docs/sdk/native-sdks/web) เพื่อขอ "SDK_KEY" และ "SDK_SECRET"
 
 ![Zoom Meeting SDK Client View](https://marketplace.zoom.us/docs/images/sdk/msdk-web-client-view.gif)
 
-## Installation
+## การตั้งค่าใช้งาน
 
-To get started, clone the repo:
+1. หลังจากดาวน์โหลดไฟล์ .zip แล้วให้ทำการแตกไว้ไว้ตำแหน่งที่ต้องการ
 
 `$ git clone https://github.com/zoom/sample-app-web.git`
 
-## Setup
+2. เปิดไฟล์เพื่อทำการแก้ไขด้วย Text Editer.
 
-1. Once cloned, navigate to the `sample-app-web/CDN` directory for the Client View CDN sample, or `sample-app-web/Local` for the Client View NPM sample, or `sample-app-web/Components` for the Component View NPM sample:
+3. เปิดไฟล์ `sample-app-web/CDN/js/index.js` : เพื่อแก้ไขค่า "SDK_KEY" และ "SDK_SECRET"
 
-   `$ cd sample-app-web/CDN` or `$ cd sample-app-web/Local` or `$ cd sample-app-web/Components`
-
-1. Then install the dependencies:
-
-   `$ npm install`
-
-1. Open the directory in your code editor.
-
-1. Open the `sample-app-web/CDN/js/index.js` or `sample-app-web/Local/js/index.js` or `sample-app-web/Components/tools/nav.js` file respectively, and enter required values for the variables:
 
    | Key                   | Value Description |
    | -----------------------|-------------|
@@ -37,35 +28,12 @@ To get started, clone the repo:
    var SDK_KEY = "YOUR_SDK_KEY"
    var SDK_SECRET = "YOUR_SDK_SECRET"
    ```
+4. เปิดไฟล์บน Brower ตำแหน่งไฟล์หน้าแรกของ Zoom meeting คือ 'CDN/index.html>
+5. ทดสอบสร้างการประชุมผ่านแอพพลิเคชั่น Zoom หรือผ่านหน้าเว็บผู้ให้บริการหลัก แล้วสร้าง url สำหรับเชิญเข้าประชุม
+6. นำหมายเลขห้องประชุม กับ รหัสผ่านมากรอกในหหน้า 'index.html' และกรอกอีเมลย์ จากนั้นกดปุ่ม Join
+7. หากไม่สามารถเรียกหน้าแสดงผลได้  ให้เข้าไปแก้ไขไฟล์ `sample-app-web/CDN/js/index.js` บรรทัด 'var joinUrl = 'meeting.html?' แก้ไขตำปหน่งของไฟล์ 'meeting.html' ให้ถูกต้อง
+8. บันทึกแล้วทดสอบอีกครั้ง  จะเห็นว่าสามารถแสดงหน้าเข้าร่วมประชุมได้แล้วบนเว็บไซต์ของเราเอง
 
-   > Reminder to not publish this sample app as is. Replace the frontend signature generator with a [backend signature generator](https://marketplace.zoom.us/docs/sdk/native-sdks/auth#generate-the-sdk-jwt) to keep your SDK Secret safe.
-
-1. Save `index.js` or `nav.js` respectively.
-
-1. Run the app:
-
-   `$ npm start`
-
-## Usage
-
-1. Navigate to http://localhost:9999 for the `CDN` or
-`Local` sample, or http://localhost:3000 for the `Components` sample. Then, enter in a Meeting or Webinar number and passcode, choose host or attendee (participant), and, click "join".
-
-   ### Client View
-
-   ![Zoom Meeting SDK Client View](https://marketplace.zoom.us/docs/images/sdk/msdk-web-client-view.gif)
-
-   > The Client View provides the option to display the Meeting SDK as a full page. This allows for a familiar Zoom Meeting experience because the Client View is the same as the [Zoom Web Client](https://support.zoom.us/hc/en-us/articles/214629443-Zoom-Web-Client), except it lives inside your own web page.
-
-   ### Component View
-
-   ![Zoom Meeting SDK Component View](https://marketplace.zoom.us/docs/images/sdk/msdk-web-component-view.gif)
-
-   > The Component View provides the option to display the Meeting SDK in components on your page. This allows for a more flexible design.
-
-> Learn more about [Gallery View requirements](https://marketplace.zoom.us/docs/sdk/overview/improve-performance) and [see more product screenshots](https://marketplace.zoom.us/docs/sdk/overview/websdk-gallery-view/#how-views-look-with-and-without-sharedarraybuffer).
-
-For the full list of features and event listeners, as well as additional guides, see our [Meeting SDK docs](https://marketplace.zoom.us/docs/sdk/native-sdks/web).
 
 ## Need help?
 
