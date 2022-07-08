@@ -10,7 +10,7 @@
 
 1. หลังจากดาวน์โหลดไฟล์ .zip แล้วให้ทำการแตกไฟล์ไว้ตำแหน่งที่ต้องการ หรือจะคัดลอกด้วยคำสั่ง
 
-`$ git clone https://github.com/command09/weerachai-jonburom.git`
+`$ git clone https://github.com/command09/Zoom-meeting-on-web.git`
 
 2. เปิดไฟล์เพื่อทำการแก้ไขด้วย Text Editer
 
