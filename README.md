@@ -2,7 +2,7 @@
 
 สามารถศึกษาคู่มือได้จาก [Terms of Use](https://zoom.us/docs/en-us/zoom_api_license_and_tou.html).
 
-การเรียกใช้งาน [Zoom Meeting SDK] โดยเข้าไปที่ (https://marketplace.zoom.us/docs/sdk/native-sdks/web) เพื่อขอ "SDK_KEY" และ "SDK_SECRET"
+การเรียกใช้งาน [Zoom Meeting SDK](https://marketplace.zoom.us/docs/sdk/native-sdks/web) เพื่อขอ "SDK_KEY" และ "SDK_SECRET"
 
 ![Zoom Meeting SDK Client View](https://marketplace.zoom.us/docs/images/sdk/msdk-web-client-view.gif)
 
